@@ -10,8 +10,10 @@ Usage:
           o 'csv': use "format=csv" to get csv format
     * 'date' use 'date=actual-date' (actual-date is date you wanted to fetch stock). By default its today's date
     * 'date-range' use 'start_date=star-date&end_date=end-date' (start-date is start date you wanted to fetch from and end-date is end-date you wanted fetch to).
-    * 'id' use 'id=stock-id' (see http://buildingnepal.com/demo/stock_server_api/index.php/welcome/stock_list)
+    * 'id' use 'id=stock-id' (see http://buildingnepal.com/demo/stock_server_api/index.php/welcome/stock_list).
     * 'symbol' use 'symbol=stock-symbol' (see http://buildingnepal.com/demo/stock_server_api/index.php/welcome/stock_list).
+    * 'limit' use 'limit=value' (value is limit). By default its 100 and can't exceed 100 even if you specify greater than that
+    * 'offset' use 'offset=value' (value is offset). It might be useful to recurse through data
 
 Example:
-http://buildingnepal.com/demo/stock_server_api/index.php/api/stocks/?start_date=2010-10-11&end_date=2010-11-01&id=140 
+http://buildingnepal.com/demo/stock_server_api/index.php/api/stocks/?start_date=2010-10-11&end_date=2010-11-01&id=140
